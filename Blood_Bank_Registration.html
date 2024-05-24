@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Registration Form</title>
+    <link rel="stylesheet" href="C:\Users\affan\OneDrive\Desktop\project\css\Blood_Bank_Registration.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Blood Bank Registration</h2>
+        <form id="registration-form">
+            <label for="blood-bank-id">Blood Bank ID:</label>
+            <input type="text" id="blood-bank-id" name="blood-bank-id" readonly>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="registration-date">Registration Date:</label>
+            <input type="date" id="registration-date" name="registration-date" required>
+
+            <label for="blood-group">Blood Group:</label>
+            <select id="blood-group" name="blood-group" required>
+                <option value="">Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="confirmation" style="display:none; margin-top: 20px;">
+            <h3>Confirmation</h3>
+            <p id="confirmationDetails"></p>
+        </div>
+    </div>
+    <script src="C:\Users\affan\OneDrive\Desktop\project\js\Blood_Bank_Registration.js"></script>
+</body>
+</html>

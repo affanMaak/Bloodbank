@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: brown;
+}
+
+.navbar {
+    background-color:white  ;
+    overflow: hidden;
+}
+li
+{
+color: white;
+}
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.nav-link:hover {
+    background-color: #d71111;
+}
+
+header {
+    background-color: #8B0000;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#content {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+form label, form input, form textarea, form button {
+    margin-bottom: 1em;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    font-size: 1em;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.5em 2em;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #575757;
+}
+
+#contactDetails, #map, #faq, #socialMedia {
+    margin-top: 2em;
+}
+
+#contactDetails h2, #map h2, #faq h2, #socialMedia h2 {
+    color: #555;
+}
+
+#map iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    height: 400px;
+}
+
+#faq ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#faq li {
+    margin-bottom: 1em;
+}
+
+#socialMedia a {
+    color: #0066cc;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+#socialMedia a:hover {
+    text-decoration: underline;
+}

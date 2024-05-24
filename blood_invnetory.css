@@ -1,0 +1,50 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #933b3b;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#inventoryList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.inventory-item {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.inventory-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.inventory-item p {
+    color: #666;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    #inventoryList {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .inventory-item {
+        padding: 10px;
+    }
+}

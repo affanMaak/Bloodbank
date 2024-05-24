@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Appointments</title>
+    <link rel="stylesheet" href="C:\Users\affan\OneDrive\Desktop\project\css\Appoinmnets.css">
+</head>
+<body>
+    <h1>Book Your Appointment</h1>
+    <form id="appointmentForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="date">Appointment Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <label for="time">Appointment Time:</label>
+        <input type="time" id="time" name="time" required><br><br>
+
+        <label for="options">Reason of appointment:</label>
+        <select id="options" name="options">
+            <option value="" selected disabled>Select an option</option>
+            <option value="option1">Routine checkup</option>
+            <option value="option2">Tests</option>
+            <option value="option3">Blood donor</option>
+            <option value="option4">Blood recipient</option>
+            <option value="option5">Replacement Donation</option>
+            <option value="option6">Not mentioned above</option>
+        </select><br><br>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+           
+    <div id="confirmation" style="display: none;">
+        <h2>Appointment Confirmed</h2>
+        <p>Thank you for booking your appointment. Here are your details:</p>
+        <p id="confirmationDetails"></p>
+        <p>We have forwarded it to the relevant department!</p>
+    </div>
+
+    <script src="Appoinments.js"></script>
+</body>
+</html>

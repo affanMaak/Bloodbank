@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Donation Administration</title>
+    <link rel="stylesheet" href="C:\Users\affan\OneDrive\Desktop\project\css\success.css">
+</head>
+<body>
+    <header>
+        <h1>Blood Donation Administration</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="donor_registration.html" target="_blank">Donor Registration</a></li>
+            <li><a href="recipient_registration.html" target="_blank">Recipient Registration</a></li>
+            <li><a href="inventory.html" target="_blank">Inventory</a></li>
+            <li><a href="Blood_Bank_Registration.html" target="_blank">Blood Bank Registration</a></li>
+            <li><a href="Blood_bank.html" target="_blank">Blood bank</a></li>
+            <li><a href="#" onclick="signOut()">Sign Out</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function signOut() {
+            // Clear session storage or local storage
+            sessionStorage.clear(); // Use localStorage.clear() for persistent sign-out
+            alert('You have been signed out.');
+            disableBackButton();
+            window.location.href = 'index2.html'; // Redirect to sign-out page
+        }
+
+        function disableBackButton() {
+            window.history.pushState(null, null, window.location.href);
+            window.onpopstate = function () {
+                window.history.go(1);
+            };
+        }
+    </script>
+</body>
+</html>
